@@ -1,0 +1,42 @@
+{
+  "review": [
+    {
+      "name": "Vani",
+      "dp": "😀😀😀",
+      "description": "\"I had an amazing experience with ABC Car Rentals! The process was seamless from start to finish. The staff was friendly and efficient, and they helped me choose the perfect car for my trip\".",
+      "id": 1
+    },
+    {
+      "name": "Bob",
+      "dp": "😀",
+      "description": "\"I had a disappointing experience with DEF Car Rentals. The vehicle I received was not in the best condition. There were scratches and dents on the exterior, and the interior was not properly cleaned\".",
+      "id": 2
+    }
+  ],
+  "booking": [
+    {
+      "name": "Bob",
+      "contact": "445",
+      "startdate": "2023-07-06",
+      "starttime": "04:15",
+      "enddate": "2023-07-07",
+      "endtime": "04:15",
+      "address": "",
+      "car": "Bijapur",
+      "id": 1
+    }
+  ],
+  "SignUp": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "email": "vani@gmail.com",
+      "phone": "8618587916",
+      "password": "vani123",
+      "id": 2
+    }
+  ]
+}
