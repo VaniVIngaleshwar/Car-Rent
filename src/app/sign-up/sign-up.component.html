@@ -1,0 +1,21 @@
+<div class="bg text-center">
+    <div class="centered">
+      <h2 style="color: black;">WELCOME</h2>
+      <p style="color: black;">Signup for a seamless experience</p>
+       <p class="firstLine">SIGN UP</p>
+ 
+    <form>
+      <form [formGroup]="signupForm" (ngSubmit)="signUp()">
+          <p> <input class="InputStyle" formControlName="email" placeholder="Email..." style="font-family:Arial, FontAwesome" type="text"> </p>
+          <!-- <span style="color: red;" *ngIf="email&& email.invalid && email.touched">This field is not valid</span> -->
+          <p> <input class="InputStyle" formControlName="phone" placeholder="Phone Number..." style="font-family:Arial, FontAwesome" type="text"> </p>
+          <p> <input class="InputStyle" formControlName="password" placeholder="Password..." style="font-family:Arial, FontAwesome" type="text"> </p>
+          <!-- <span style="color: red;" *ngIf="password&& password.invalid && password.touched">This field is not valid</span> -->
+          <button type="submit" class="btn btn-dark" [disabled]="!signupForm.valid">Sign Up</button>
+        <p style="color: rgb(8, 8, 8);">Already Reisteried!!!</p>
+        <a style="color: rgb(8, 8, 8);" routerLink="/login">Click to Login</a>
+        </form>
+  </form>
+</div>
+</div>
+

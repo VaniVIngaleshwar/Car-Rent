@@ -1,0 +1,65 @@
+nav {
+    background: #c9c3c3;
+}
+
+.bar {
+    height: 500px;
+    width: 18%;
+    background-color: #b3a8a8;
+    color: rgb(255, 246, 246);
+    transition: background-color 0.3s ease;
+    padding: auto;
+    font-size: large;
+    position: fixed;
+}
+
+.v {
+    text-align: left;
+    font-size: large;
+    color: white;
+    margin-left: 5%;
+}
+
+/* .list ul li{
+    display: inline-block;
+    padding: 15px;
+    color: whitesmoke;
+    font-family: 'Pathway Extreme', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.list ul li:hover{
+    color:black;
+} */
+
+ul li ul.dropdown li {
+    display: block;
+    width: 100%;
+}
+
+ul li ul.dropdown li:hover {
+    background-color: #faf2f2;
+    width: 100%;
+}
+
+ul li ul.dropdown {
+    width: 100%;
+    background: #c9c3c3;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    width: 20%;
+    height: 50%;
+}
+
+ul li a:hover {
+    background: #1d1f1d;
+    width: 20%;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+    width: 20%;
+}

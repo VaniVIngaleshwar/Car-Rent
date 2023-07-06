@@ -1,0 +1,83 @@
+<button class="btn btn-light mt-3 me-3" routerLink="/view">View</button>
+<div class="y">
+
+  <div class="form">
+    <form [formGroup]=" bookform">
+      <div class="from-group mb-2" style="background-color: rgb(236, 171, 182,0);">
+
+        <div style="display: flex;">
+          <div class="from-group mb-2 ms-3" style="width: 35%;">
+            <label for="fname" class="mt-3">Name</label>
+            <input type="text" id="name" class="form-control" name="name" formControlName="name" placeholder="Name...">
+            <span style="color: red;" *ngIf="name && name.invalid && name.touched">This field is not
+              valid</span> <br>
+          </div>
+        </div>
+
+        <div style="display: flex;">
+          <div class="from-group mb-2 ms-3" style="width: 35%;">
+            <label for="startdate">Start Date</label>
+            <input type="date" id="startdate" class="form-control" name="startdate" formControlName="startdate"
+              placeholder="Start Date..">
+            <span style="color: red;" *ngIf="startdate && startdate.invalid && startdate.touched">This field is not
+              valid</span>
+          </div>
+
+          <div class="from-group mb-2" style="width: 35%; margin-left: 8%;">
+            <label for="starttime">Start Time</label>
+            <input type="time" id="time" class="form-control" name="starttime" formControlName="starttime">
+            <span style="color: red;" *ngIf="starttime && starttime.invalid && starttime.touched">This field is not
+              valid</span>
+            <br>
+          </div>
+        </div>
+
+        <div style="display: flex;">
+          <div class="from-group mb-2 ms-3" style="width: 35%;">
+            <label for="enddate">End Date</label>
+            <input type="date" id="enddate" class="form-control" name="enddate" formControlName="enddate"
+              placeholder="Date..">
+            <span style="color: red;" *ngIf="enddate && enddate.invalid && enddate.touched">This field is not
+              valid</span>
+          </div>
+
+          <div class="from-group mb-2" style="width: 35%; margin-left: 8%;">
+            <label for="endtime">End Time</label>
+            <input type="time" id="endtime" class="form-control" name="endtime" formControlName="endtime"
+              placeholder="Enter Time">
+            <span style="color: red;" *ngIf="endtime && endtime.invalid && endtime.touched">This field is not
+              valid</span>
+            <br>
+          </div>
+        </div>
+
+
+        <div style="display: flex;">
+          <div class="from-group mb-2 ms-3" style="width: 50%;">
+            <label for="contact">Contact</label>
+            <input type="contact" id="contact" class="form-control" name="contact" formControlName="contact"
+              placeholder="Contact">
+            <span style="color: red;" *ngIf="contact && contact.invalid && contact.touched">This field is not
+              valid</span> <br>
+          </div>
+        </div>
+
+        <div class="from-group mb-2 ms-3" style="width: 50%;">
+          <label for="car">Locationnn</label>
+          <select class="form-select" name="car" formControlName="car">
+            <option>Banglore</option>
+            <option>Pune</option>
+            <option>Mumbai</option>
+            <option>Bijapur</option>
+            <option>Shimla</option>
+            <option>Delhi</option>
+          </select>
+          <span style="color: red;" *ngIf="name && name.invalid && name.touched">This field is not
+            valid</span> <br>
+          <button (click)="addBuy(this.bookform.value)" type="button" type="button" class="btn btn-dark mt-3"
+            [disabled]="!bookform.invalid">Book Now</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,44 @@
+.grey-bg {
+  background-color: #F5F7FA;
+}
+
+details {
+  margin-bottom: 10px;
+}
+
+summary {
+  cursor: pointer;
+  font-size: 18px;
+  margin-right: 400px;
+  margin-left: 400px;
+  font-weight: bold;
+}
+
+/* Hide the arrow icon in some browsers */
+summary::-webkit-details-marker {
+  display: none;
+}
+
+/* CSS rules to style the collapsed content */
+details[open] summary::after {
+  content: "▼";
+  /* Display a down arrow */
+}
+
+details summary::after {
+  content: "►";
+  /* Display a right arrow */
+  float: right;
+}
+
+details[open]>div {
+  display: block;
+  margin-left: 400px;
+  margin-right: 400px;
+  font-weight: lighter;
+}
+
+details>div {
+  display: none;
+  margin-left: 20px;
+}

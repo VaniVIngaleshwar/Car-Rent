@@ -1,0 +1,59 @@
+nav {
+    float: left;
+}
+
+.y{
+    background-image: url(https://images.hertz.com/rentacar/content/US/product_services/one-way-car-rentals.jpg);
+    height: auto;
+    min-height: 100vh;
+    background-position: top center;
+    margin-top: 0%;
+}
+
+.button-1,
+.button-2 {
+    background: #BBD6B8;
+    border-radius: 20%;
+}
+
+.d-flex {
+    float: left;
+}
+
+.book {
+
+    margin-left: 10%;
+}
+
+.x {
+    margin-top: 10%;
+    text-align: center;
+}
+
+.card {
+    display: inline-block;
+}
+
+.btn {
+    float: right;
+}
+
+.form {
+    margin-top: 0%;
+    margin-left: 25%;
+    width: 50%;
+    height: 30%;
+    border-color: 3px solid black;
+    border: 3px solid black;
+    border-radius: 1%;
+    color: rgb(14, 13, 13);
+    height: auto;
+   background-color: rgba(red, green, blue, 0.5);
+    background-size: 100% 100%;
+    background-position: top center;
+}
+
+.table {
+    width: 95%;
+    margin-left: 2%;
+}

@@ -1,0 +1,71 @@
+<div class="x">
+  <nav>
+    <div class="container">
+      <div class="d-flex"
+        style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWaHvciHRGGnE_FGXE9T42zFdvA2g0dRtZZA&usqp=CAU)">
+        <i data-bs-toggle="modal" data-bs-target="#exampleModal" class="bi bi-pen-fill" style="color: #131414;">Write
+          Review</i>
+      </div>
+    </div>
+  </nav>
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div style="background-color:#85868a" class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form [formGroup]="bform">
+            <div class="from-group mb-2">
+
+              <label for="name" class="mt-3">Name</label>
+              <input type="text" id="name" class="form-control" name="name" formControlName="name"
+                placeholder="Name...">
+              <span style="color: red;" *ngIf="name && name.invalid && name.touched">This field is not valid</span> <br>
+
+              <label for="dp">Rating</label>
+              <select class="form-select" name="dp" formControlName="dp">
+                <option>😀</option>
+                <option>😀😀</option>
+                <option>😀😀😀</option>
+                <option>😀😀😀😀</option>
+                <option>😀😀😀😀😀</option>
+              </select>
+
+              <label for="description" class="mt-3">Review:</label><br>
+              <textarea name="description" id="description" class="form-control" cols="15" rows="10"
+                formControlName="description" placeholder="Review..."></textarea><br>
+              <span style="color: red;" *ngIf="description && description.invalid && description.touched">This field is
+                not valid</span> <br>
+
+
+              <button type="button" (click)="addReview(this.bform.value)" type="button" [disabled]="!bform.valid"
+                class="btn btn-dark">Add</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h3 style="margin-left: 4%; margin-top: 2%;">Happy Customers</h3>
+  <h5 style="margin-left: 4%; margin-top: 1%;">Our clients send us bunch of smilies with our services and we love them.
+  </h5>
+  <div class="g" style="margin-left: 5%;">
+    <div class="book mt-3" *ngFor="let item of bdata">
+      <div class="card ms-3 mb-2" style="width: 18rem;">
+        <div class="card-body">
+          <h5
+            style="background-color: rgb(253, 252, 252,0.5); color: rgb(33, 33, 34); font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serifs; ">
+            {{item.name}}</h5>
+          <h5 style="background-color: rgb(253, 252, 252,0.5); color: rgb(44, 44, 46);">{{item.dp}}</h5>
+          <p
+            style="background-color: rgb(253, 252, 252,0.5); color: rgb(45, 45, 46); font-family: Arial, Helvetica, sans-serif; ">
+            {{item.description}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <h6 style="margin-left: 2%; margin-top: 2%;">Thanks for giving us your feedback online.</h6> -->
+
+<h6 style="margin-left: 5%; margin-top: 2%;">Thanks for giving us your feedback online.</h6>

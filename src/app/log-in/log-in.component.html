@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="bg text-center">
+    <div class="centered">
+      <h2 style="color: rgb(14, 13, 13);">WELCOME</h2>
+      <p style="color: rgb(27, 27, 27);">Login for a seamless experience</p>
+      <p class="firstLine">LOGIN</p>
+
+
+      <form>
+        <form [formGroup]="loginForm" (ngSubmit)="login()">
+
+          <p> <input class="InputStyle" formControlName="email" placeholder="Email..."
+              style="font-family:Arial, FontAwesome" type="text"> </p>
+
+          <p> <input class="InputStyle" formControlName="phone" placeholder="Phone Number..."
+              style="font-family:Arial, FontAwesome" type="text"> </p>
+          <p> <input class="InputStyle" formControlName="password" placeholder="Password..."
+              style="font-family:Arial, FontAwesome" type="text"> </p>
+
+          <button type="submit" class="btn btn-dark" [disabled]="!loginForm.valid" routerLink="/home">LogIn</button>
+          <p style="color: rgb(10, 10, 10);">New Account!!!</p>
+          <a style="color: rgb(12, 12, 12);" routerLink="/signup">Click to SignUp</a>
+        </form>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+.container, .z{
+    display: flex;  
+}
+.b{
+    margin-left: 5%;
+    height: 200px;
+    width: 200px;
+    margin-top: 0%;
+}
+.a{
+    margin-top: 13%;
+    height: 200px;
+    width: 400px;
+}
+.c{
+    margin-top: 20%;
+    margin-left: 50%;
+    float: right;
+}
